@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:"맑은 고딕","돋움";
+    background:#eef7ff;
+    color:#333;
+}
+
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+[class*="c_"]{
+    float:left;
+    padding:10px;
+    width:100%;
+}
+
+@media only screen and (min-width:600px){
+
+    .c_m_1{width:8.33%;}
+    .c_m_2{width:16.66%;}
+    .c_m_3{width:25%;}
+    .c_m_4{width:33.33%;}
+    .c_m_5{width:41.66%;}
+    .c_m_6{width:50%;}
+    .c_m_7{width:58.33%;}
+    .c_m_8{width:66.66%;}
+    .c_m_9{width:75%;}
+    .c_m_10{width:83.33%;}
+    .c_m_11{width:91.66%;}
+    .c_m_12{width:100%;}
+}
+
+@media only screen and (min-width:768px){
+
+    .c_1{width:8.33%;}
+    .c_2{width:16.66%;}
+    .c_3{width:25%;}
+    .c_4{width:33.33%;}
+    .c_5{width:41.66%;}
+    .c_6{width:50%;}
+    .c_7{width:58.33%;}
+    .c_8{width:66.66%;}
+    .c_9{width:75%;}
+    .c_10{width:83.33%;}
+    .c_11{width:91.66%;}
+    .c_12{width:100%;}
+}
+
+header{
+    height:100px;
+    background:#27374d;
+    padding:20px;
+    color:white;
+    border-bottom:5px solid #4f80c1;
+}
+
+header h1 a{
+    color:white;
+    text-decoration:none;
+}
+
+#logo{
+    float:left;
+    margin-right:20px;
+}
+
+#logo img{
+    width:70px;
+    height:70px;
+}
+
+header h1{
+    padding-top:15px;
+}
+
+aside#menu{
+    padding:15px;
+}
+
+aside#menu li{
+    margin-bottom:12px;
+}
+
+aside#menu a{
+    display:block;
+    padding:15px;
+    background:#4f80c1;
+    color:white;
+    border-radius:12px;
+    font-weight:bold;
+}
+
+aside#menu a:hover{
+    background:#27374d;
+}
+
+section#main h2{
+    text-align:center;
+    color:#27374d;
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+.musical_card{
+    width:48%;
+    background:white;
+    padding:15px;
+    margin:0.7%;
+    float:left;
+    border-radius:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.poster{
+    width:100%;
+    height:280px;
+    overflow:hidden;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.poster img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.musical_card h3{
+    color:#27374d;
+    margin-bottom:12px;
+    font-size:22px;
+}
+
+.musical_card p{
+    line-height:160%;
+    margin-bottom:12px;
+}
+
+.musical_card a{
+    display:inline-block;
+    background:#27374d;
+    color:white;
+    padding:12px 18px;
+    border-radius:10px;
+}
+
+.musical_card a:hover{
+    background:#4f80c1;
+}
+
+footer{
+    clear:both;
+    background:#27374d;
+    color:white;
+    padding:30px;
+    margin-top:30px;
+}
+
+#footer_left h3{
+    margin-bottom:15px;
+    color:#90caf9;
+}
+
+#footer_left{
+    line-height:180%;
+}
+
+#footer_right{
+    margin-top:25px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,0.3);
+    padding-top:15px;
+}
+
+@media only screen and (max-width:767px){
+
+    .musical_card{
+        width:100%;
+        margin-bottom:20px;
+    }
+
+    .poster{
+        height:320px;
+    }
+}
+</style>
+
+<title>공연 라인업</title>
+
+</head>
+
+<body>
+
+<header class="c_12">
+
+    <div id="logo">
+        <img src="img/logo.png">
+    </div>
+
+    <h1>
+        <a href="index.html">Musical Archive</a>
+    </h1>
+
+</header>
+
+<aside id="menu" class="c_m_3 c_3">
+
+<ul>
+
+    <li><a href="lineup.html">공연 라인업</a></li>
+    <li><a href="introduce.html">공연장 소개</a></li>
+    <li><a href="numberplay.html">넘버 플레이</a></li>
+    <li><a href="ticketing.html">예매처 모음</a></li>
+    <li><a href="guide.html">입문 가이드</a></li>
+
+</ul>
+
+</aside>
+
+<section id="main" class="c_m_9 c_9">
+
+<h2>현재 인기 공연 TOP 10</h2>
+
+<div class="musical_card">
+
+    <div class="poster">
+        <img src="img/brother.gif">
+    </div>
+
+    <h3>뮤지컬 브라더스 까라마조프</h3>
+
+    <p>
+    아버지의 죽음 이후 서로 다른 신념을 가진 형제들의 갈등을 그린 작품
+    </p>
+    </p>
+
+    <a href="https://tickets.interpark.com/goods/26004473">
+        공연 정보 확인하기
+    </a>
+
+</div>
+
+<div class="musical_card">
+
+    <div class="poster">
+        <img src="img/dearevan.jpg">
+    </div>
+
+    <h3>뮤지컬 디어 에반 핸슨</h3>
+    <p>
+    우연한 거짓말 이후 세상과 관계를 회복해가는 소년의 이야기
+    </p>
+
+    <a href="https://tickets.interpark.com/goods/26007442">
+        공연 정보 확인하기
+    </a>
+
+</div>
+
+<div class="musical_card">
+
+    <div class="poster">
+        <img src="img/oz.gif">
+    </div>
+
+    <h3>뮤지컬 오즈</h3>
+
+    <p>
+        인간과 AI의 우정을 따뜻하게 그려낸 창작 뮤지컬
+    </p>
+
+    <a href="https://tickets.interpark.com/goods/26004937">
+        공연 정보 확인하기
+    </a>
+
+</div>
+
+<div class="musical_card">
+
+    <div class="poster">
+        <img src="img/betto.gif">
+    </div>
+
+    <h3>뮤지컬 베토벤</h3>
+
+    <p>
+        베토벤의 음악과 삶, 사랑을 웅장한 무대로 풀어낸 작품
+    </p>
+
+    <a href="https://tickets.interpark.com/goods/26006232">
+        공연 정보 확인하기
+    </a>
+
+</div>
+
+<div class="musical_card">
+
+    <div class="poster">
+        <img src="img/madhatter.gif">
+    </div>
+
+    <h3>뮤지컬 매드해터</h3>
+
+    <p>
+        이상한 세계 속 모자장수의 숨겨진 과거와 광기를 다룬 작품
+    </p>
+
+    <a href="https://tickets.interpark.com/goods/26006189">
+        공연 정보 확인하기
+    </a>
+
+</div>
+
+<div class="musical_card">
+
+    <div class="poster">
+        <img src="img/billy.gif">
+    </div>
+
+    <h3>뮤지컬 빌리 엘리어트</h3>
+
+    <p>
+        발레리노를 꿈꾸는 소년이 편견과 현실을 넘어 성장해가는 이야기
+    </p>
+
+    <a href="https://tickets.interpark.com/goods/26001001">
+        공연 정보 확인하기
+    </a>
+
+</div>
+
+<div class="musical_card">
+
+    <div class="poster">
+        <img src="img/lempika.gif">
+    </div>
+
+    <h3>뮤지컬 렘피카</h3>
+
+    <p>
+        자유로운 삶을 꿈꾸던 여성 화가 타마라 드 렘피카의 인생을 그린 작품
+    </p>
+
+    <a href="https://tickets.interpark.com/goods/26000685">
+        공연 정보 확인하기
+    </a>
+
+</div>
+
+<div class="musical_card">
+
+    <div class="poster">
+        <img src="img/swingdays.gif">
+    </div>
+
+    <h3>뮤지컬 스윙 데이즈</h3>
+
+    <p>
+        해방 이후 혼란스러운 시대를 살아가는 청춘들의 꿈과 사랑 이야기
+    </p>
+
+    <a href="https://tickets.interpark.com/goods/26001111">
+        공연 정보 확인하기
+    </a>
+
+</div>
+
+<div class="musical_card">
+
+    <div class="poster">
+        <img src="img/letter.gif">
+    </div>
+
+    <h3>뮤지컬 팬레터</h3>
+
+    <p>
+        일제강점기 문인들의 우정과 예술,그리고 비밀스러운 편지를 담은 작품
+    </p>
+
+    <a href="https://tickets.interpark.com/goods/26001565">
+        공연 정보 확인하기
+    </a>
+
+</div>
+
+<div class="musical_card">
+
+    <div class="poster">
+        <img src="img/seopeyeon.gif">
+    </div>
+
+    <h3>뮤지컬 서편제</h3>
+
+    <p>
+        소리꾼 가족의 삶과 한을 한국적인 음악으로 풀어낸 감성 뮤지컬
+    </p>
+
+    <a href="https://tickets.interpark.com/goods/26003126">
+        공연 정보 확인하기
+    </a>
+
+</div>
+
+</section>
+
+<footer class="c_12">
+
+<div id="footer_left">
+
+<h3>고객센터</h3>
+
+공연문의 1588-XXXX<br>
+티켓문의 1544-XXXX<br><br>
+
+팩스 02-1234-XXXX<br>
+이메일 musicalarchive@archive.com<br><br>
+
+공연장문의 02-5678-XXXX<br>
+예매문의 02-8765-XXXX<br><br>
+
+공연 1:1 문의<br>
+티켓 1:1 문의
+
+</div>
+
+<div id="footer_right">
+
+COPYRIGHT(C) Musical Archive All Rights Reserved.
+
+</div>
+
+</footer>
+
+</body>
+</html>
